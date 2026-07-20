@@ -63,3 +63,8 @@ console.log("\nPart 5: Object Methods\n");
 student.addCourse("Advanced Front-end Programming");
 console.log(student.courses);
 console.log(student.totalCourses());
+
+// Bonus Task
+console.log("\nBonus Task\n");
+let average = array.reduce((sum, value) => sum + value, 0) / array.length;
+console.log(average);
