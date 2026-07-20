@@ -1,4 +1,5 @@
 // Part 1: Understanding and Creating Objects
+console.log("Part 1: Understanding and Creating Objects\n");
 let student = {
     name: "Anderson",
     age: 31,
@@ -18,6 +19,7 @@ console.log(student.age);
 console.log(student.info);
 
 // Part 2: Working with JSON
+console.log("Part 2: Working with JSON\n");
 // Convert the student object into a JSON string
 let jsonString = JSON.stringify(student);
 console.log(jsonString);
@@ -28,6 +30,7 @@ console.log(jsonObj);
 console.log(student === jsonObj);
 
 // Part 3: Using Destructuring Assignment
+console.log("Part 3: Using Destructuring Assignment\n");
 let { name, age, enrolled, courses, info } = student;
 console.log(name);
 console.log(courses);
