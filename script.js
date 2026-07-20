@@ -10,8 +10,16 @@ let student = {
         city: "Toronto",
         street: "Maple Leaf Street",
         college: "Humber College",
-        program: "Computer Programming"
-    }
+        program: "Computer Programming",
+    },
+     // method to add new course
+        addCourse(newCourse) {
+        this.courses.push(newCourse);
+        },
+
+        totalCourses() {
+            return this.courses.length;
+        }
 };
 
 console.log(student.name);
@@ -49,3 +57,9 @@ console.log(newProperty);
 let courseArray = ["Advanced Front-end programming", "Database Programming"];
 let combinedArray = [...student.courses,...courseArray];
 console.log(combinedArray);
+
+//Part 5: Object Methods
+console.log("\nPart 5: Object Methods\n");
+student.addCourse("Advanced Front-end Programming");
+console.log(student.courses);
+console.log(student.totalCourses());
