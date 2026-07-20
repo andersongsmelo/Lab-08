@@ -46,3 +46,6 @@ console.log(cloneObj);
 console.log("\nAdd new property to the cloneObj\n");
 let newProperty = {...cloneObj, graduationYear: 2028};
 console.log(newProperty);
+let courseArray = ["Advanced Front-end programming", "Database Programming"];
+let combinedObj = [...student.courses,...courseArray];
+console.log(combinedObj);
