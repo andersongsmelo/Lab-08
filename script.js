@@ -19,7 +19,7 @@ console.log(student.age);
 console.log(student.info);
 
 // Part 2: Working with JSON
-console.log("Part 2: Working with JSON\n");
+console.log("\nPart 2: Working with JSON\n");
 // Convert the student object into a JSON string
 let jsonString = JSON.stringify(student);
 console.log(jsonString);
@@ -30,7 +30,7 @@ console.log(jsonObj);
 console.log(student === jsonObj);
 
 // Part 3: Using Destructuring Assignment
-console.log("Part 3: Using Destructuring Assignment\n");
+console.log("\nPart 3: Using Destructuring Assignment\n");
 let { name, age, enrolled, courses, info } = student;
 console.log(name);
 console.log(courses);
@@ -38,3 +38,11 @@ console.log(courses);
 let array = [85, 92, 78, 90];
 let [first, second, third, forth] = array;
 console.log(first, second); // first two scores
+
+// Part 4: The Spread Operator
+console.log("\nPart 4: The Spread Operator\n");
+let cloneObj = {...student};
+console.log(cloneObj);
+console.log("\nAdd new property to the cloneObj\n");
+let newProperty = {...cloneObj, graduationYear: 2028};
+console.log(newProperty);
