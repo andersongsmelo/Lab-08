@@ -26,3 +26,12 @@ let jsonObj = JSON.parse(jsonString);
 console.log(jsonObj);
 //Compare
 console.log(student === jsonObj);
+
+// Part 3: Using Destructuring Assignment
+let { name, age, enrolled, courses, info } = student;
+console.log(name);
+console.log(courses);
+
+let array = [85, 92, 78, 90];
+let [first, second, third, forth] = array;
+console.log(first, second); // first two scores
